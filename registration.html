@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Registration Form | Mighty Ducks Hockey League</title>
+    <link rel="stylesheet" href="./css/mdhl.css" >
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" >
+    <meta name="description" content="Mighty Ducks Hockey League" >
+  </head>
+  <body>
+    <main>
+      <nav></nav>
+      <header>
+        <div class="overlay">
+          <h1>Mighty Ducks Hockey League</h1>
+        </div>
+      </header>
+
+      <section class="events_tille">
+        <div class="event_content">
+          <div class="logo_content">
+            <img class="event_logo" src="./images/logo.png" alt="" >
+          </div>
+        </div>
+        <h2>Form</h2>
+      </section>
+      <div class="container events">
+        <div class="menu">
+          <div class="menu_content">
+            <nav>
+              <ul>
+                <li class=""><a class="" href="index.html">Home</a></li>
+                <li class=""><a href="about.html">About</a></li>
+                <li class=""><a href="game_info.html">Game Information</a></li>
+                <li class=""><a href="rules.html">Rules</a></li>
+                <li class="active">
+                  <a href="registration.html">Registration Form</a>
+                </li>
+                <li class=""><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="events_info">
+          <div class="events_info_content">
+            <div class="form_container">
+              <form action="show_data.html" method="get">
+                <fieldset>
+                  <legend>Registration Form</legend>
+                  <div class="form_md">
+                    <div class="">
+                      <label for="name">Player's First Name:</label>
+                      <input
+                        type="text"
+                        name="first_name"
+                        id="name"
+                        placeholder="First Name"
+                        required=""
+                      >
+                    </div>
+                  </div>
+                  <div class="form_md">
+                    <div>
+                      <label for="last_name">Last Name:</label>
+                      <input
+                        type="text"
+                        name="last_name"
+                        id="last_name"
+                        placeholder="Last Name"
+                        required=""
+                      >
+                    </div>
+                  </div>
+                  <div class="form_lg">
+                    <div class="">
+                      <label for="address">Street Address:</label>
+                      <input
+                        type="text"
+                        name="address"
+                        id="address"
+                        placeholder="Address"
+                        required=""
+                      >
+                    </div>
+                  </div>
+                  <div class="form_md">
+                    <div class="">
+                      <label for="city">City:</label>
+                      <input
+                        type="text"
+                        name="city"
+                        id="city"
+                        placeholder="city"
+                      >
+                    </div>
+                  </div>
+                  <div class="form_md">
+                    <div class="">
+                      <label for="postal_code">Zip Code:</label>
+                      <input
+                        type="number"
+                        name="postal_code"
+                        id="postal_code"
+                        placeholder="Postal Code"
+                        required
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form_md">
+                    <div class="">
+                      <label for="birthdate">Birth Date:</label>
+                      <input
+                        type="date"
+                        name="birthdate"
+                        id="birthdate"
+                        required=""
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form_md">
+                    <div class="column_md">
+                      <div class="" style="padding: 0 10px; width: 50%">
+                        <label>Gender:</label>
+                        <div class="form_checkbox">
+                          <input
+                            type="radio"
+                            name="gender"
+                            id="famale"
+                            value="female"
+                            required
+                          >
+                          Female
+                          <input
+                            type="radio"
+                            name="gender"
+                            id="_male"
+                            value="male"
+                            required
+                          >
+                          Male
+                        </div>
+                      </div>
+                      <div class="" style="padding: 0 10px; width: 50%">
+                        <label> Grade: </label>
+                        <select
+                          name="grade"
+                          required
+                          style="width: 100%; padding: 10px"
+                        >
+                          <option value="" disabled selected>
+                            Select a grade
+                          </option>
+                          <option value="pre-school">Pre-School</option>
+                          <option value="one-st">1st</option>
+                          <option value="second-nd">2nd</option>
+                          <option value="third-rd">3rd</option>
+                          <option value="four-th">4th</option>
+                          <option value="five-th">5th</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr>
+                  <div>
+                    <p>Which elementary school do you live near?</p>
+                    <p>Closest School:</p>
+                  </div>
+                  <div class="form_lg">
+                    <div class="form_checkbox--school">
+                      <div class="check_column">
+                        <div class="">
+                          <input
+                            type="checkbox"
+                            name="closest-school"
+                            id="aj-katzenmaier"
+                            value="aj-katzenmaier"
+                          >
+                          AJ Katzenmaier
+                        </div>
+                        <div>
+                          <input
+                            type="checkbox"
+                            name="closest-school"
+                            id="greenbay"
+                            value="greenbay"
+                          >
+                          Greenbay
+                        </div>
+                      </div>
+                      <div class="check_column">
+                        <div class="">
+                          <input
+                            type="checkbox"
+                            name="closest-school"
+                            id="howard-yeager"
+                            value="howard-yeager"
+                          >
+                          Howard A Yeage
+                        </div>
+                        <div class="">
+                          <input
+                            type="checkbox"
+                            name="closest-school"
+                            id="marjorie-hart"
+                            value="marjorie-hart"
+                          >
+                          Marjorie P Hart
+                        </div>
+                      </div>
+
+                      <div class="check_column">
+                        <div class="">
+                          <input
+                            type="checkbox"
+                            name="closest-school"
+                            id="north-elementary"
+                            value="north-elementary"
+                          >
+                          North Elementary
+                        </div>
+                        <div class="">
+                          <input
+                            type="checkbox"
+                            name="closest-school"
+                            id="south-elementary"
+                            value="south-elementary"
+                          >
+                          South Elementary
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>
+                    What position(s) do you normally play? (check all that
+                    apply)
+                  </p>
+
+                  <div class="form_lg">
+                    <div class="form_checkbox--school">
+                      <div class="check_column">
+                        <div>
+                          <input
+                            type="checkbox"
+                            name="position-play"
+                            id="forward"
+                            value="forward"
+                          >
+                          Forward
+                        </div>
+                        <div class="">
+                          <input
+                            type="checkbox"
+                            name="position-play"
+                            id="defense"
+                            value="defense"
+                          >
+                          Defense
+                        </div>
+                      </div>
+                      <div class="check_column">
+                        <div class="">
+                          <input
+                            type="checkbox"
+                            name="position-play"
+                            id="midfield"
+                            value="midfield"
+                          >
+                          Midfield
+                        </div>
+                        <div class="">
+                          <input
+                            type="checkbox"
+                            name="position-play"
+                            id="goalkeeper"
+                            value="goalkeeper"
+                          >
+                          Goalkeeper
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form_md">
+                    <p>Uniform Size:</p>
+                    <div class="">
+                      <select
+                        style="padding: 10px"
+                        name="uniform-size"
+                        id="uniform-size"
+                        required
+                      >
+                        <option disabled selected value="">
+                          Select a uniform size
+                        </option>
+                        <option value="Youth Small">Youth Small</option>
+                        <option value="Youth Medium">Youth Medium</option>
+                        <option value="Youth Large">Youth Large</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="Extra-Large">Extra-Large</option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr >
+                  <div class="form_lg">
+                    <p>Permission to Play</p>
+                    <p class="title_signature">
+                      I, the parent or guardian of the minor registrant, agree
+                      that the registrant and i will abide by all the rules of
+                      the Mighty Ducks Hockey League (MDHL). In recognizing the
+                      possibility of physical injury associated with hockey and
+                      in consideration for the "League" acceting the registrant
+                      for its hockey programs and activities, I herebry release,
+                      discharge, and/or otherwise indemnify MDHL, their
+                      employees and associated personnel and voluteers,
+                      including the facilities used for practices and games,
+                      against any claim by or on behalf of the registrant as a
+                      result of the registrant's participation in the
+                      programand/orbeing transported to or from MDHL sponsored
+                      activities,which transportation<br ><br >
+                      By signing below, I herebyagree andauthorizethe above.In
+                      addition, by signing below, lalso<br >
+                      acknowledge that I have read the cancellation policy and
+                      agree to its terms.
+                    </p>
+                  </div>
+                  <div class="form_md">
+                    <div class="">
+                      <label>Parent/GuardianSignature:</label>
+                      <input
+                        type="text"
+                        id="parent_guardian"
+                        name="parent_guardian"
+                        placeholder="Enter your signature"
+                        required
+                      >
+                    </div>
+                  </div>
+                  <div class="form_md">
+                    <div class="">
+                      <label>Date:</label>
+
+                      <input
+                        type="date"
+                        id="date"
+                        name="date_signature"
+                        required
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form_lg">
+                    <div class="button_Submit">
+                      <button class="submit">Submit</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div>
+          <p>
+            Mighty Ducks Hockey League
+            <br >
+            Copyright 1994 - 2023. All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
